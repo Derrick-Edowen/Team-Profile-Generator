@@ -14,7 +14,7 @@ const start = () => managerQuest()
 const managerQuest = () => {
     inquirer.prompt(manQuestions)
     .then((answers) => {
-        answers = new Manager(answers.name,  answers.id, answers.email, answers.officeNumber)
+        answers = new Manager(answers.name,  answers.id, answers.email, answers.office)
         employeeQuest.push(answers);
         return employeeRespond();
     })
@@ -22,7 +22,7 @@ const managerQuest = () => {
 const engineerQuest = () => {
     inquirer.prompt(engQuestions)
     .then((answers) => {
-        answers = new Engineer(answers.name,  answers.id, answers.email, answers.git)
+        answers = new Engineer(answers.name,  answers.id, answers.email, answers.github)
         employeeQuest.push(answers);
         return employeeRespond();
     })
