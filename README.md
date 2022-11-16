@@ -32,8 +32,7 @@ THEN I exit the application, and the HTML is generated
 In order to run this  application, the user must install the required node packages. This is done by typing npm install in the terminal. Jest is also used to test the contructor methods.
 
 ## Usage
-- [!Video]()
-- [!GIF]()
+- [!Video](./media/Walkthrough.webm)
 
 ## Credits
 N/A
